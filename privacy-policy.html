@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RepoShep 隐私政策 · Privacy Policy</title>
+<meta name="description" content="RepoShep（牧仓犬）隐私政策：本地优先的 macOS 多仓库健康监控。不收集数据；仅两条默认关闭的可选出站路径。">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --border: #d2d2d7;
+    --accent: #0066cc;
+    --card: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1d1d1f;
+      --text: #f5f5f7;
+      --muted: #a1a1a6;
+      --border: #424245;
+      --accent: #2997ff;
+      --card: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+                 "Hiragino Sans GB", "Helvetica Neue", "Microsoft YaHei", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header.page {
+    max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 0;
+  }
+  h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 .25rem; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0 0 1.25rem; }
+  h2 { font-size: 1.25rem; margin: 2.25rem 0 .5rem; line-height: 1.4; }
+  h3 { font-size: 1.05rem; margin: 1.5rem 0 .25rem; }
+  p, li { margin: .5rem 0; }
+  ul { padding-left: 1.4rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .callout {
+    background: var(--card); border-radius: 12px; padding: 1rem 1.25rem; margin: 1rem 0;
+  }
+  .callout p:first-child { margin-top: 0; }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout ul { margin: .25rem 0; }
+  .lang-switch {
+    display: inline-flex; border: 1px solid var(--border); border-radius: 9px;
+    overflow: hidden; margin-top: 1rem;
+  }
+  .lang-switch button {
+    appearance: none; border: none; background: transparent; color: var(--accent);
+    font: inherit; font-size: .9rem; padding: .35rem .9rem; cursor: pointer;
+  }
+  .lang-switch button[aria-pressed="true"] {
+    background: var(--accent); color: #fff; cursor: default;
+  }
+  html[data-lang="zh"] .lang-en { display: none; }
+  html[data-lang="en"] .lang-zh { display: none; }
+  .en-divider { display: none; margin: 3.5rem 0 0; }
+  html:not([data-lang]) .en-divider { display: block; }
+  footer {
+    max-width: 46rem; margin: 0 auto; padding: 0 1.25rem 3rem;
+    color: var(--muted); font-size: .9rem;
+  }
+  hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+  @media print {
+    .lang-switch { display: none; }
+    html[data-lang] .lang-en, html[data-lang] .lang-zh { display: block; }
+    html[data-lang="zh"] .lang-en, html[data-lang="en"] .lang-zh { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="page">
+  <!-- TODO 提审前：把下方 support@example.com（两处）替换为你的真实支持邮箱。 -->
+  <h1 class="lang-zh">RepoShep · 牧仓犬 隐私政策</h1>
+  <h1 class="lang-en">RepoShep Privacy Policy</h1>
+  <p class="meta lang-zh">生效日期：2026 年 10 月 15 日 · 适用于 Mac App Store 分发的 RepoShep for macOS 1.0 及更高版本</p>
+  <p class="meta lang-en">Effective date: October 15, 2026 · Applies to RepoShep for macOS 1.0 and later, distributed on the Mac App Store</p>
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" id="btn-zh" aria-pressed="true">中文</button>
+    <button type="button" id="btn-en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================== 中文 ======================== -->
+<section class="lang-zh">
+
+  <div class="callout">
+    <p><strong>摘要</strong></p>
+    <ul>
+      <li><strong>我们不收集任何数据。</strong>没有账号，没有遥测、分析、广告或追踪，开发者不运营任何服务器。</li>
+      <li>核心功能<strong>完全在你的 Mac 上本地运行</strong>：仓库状态、差异、健康分与活动记录只保存在本机。</li>
+      <li>仅存在<strong>两条可选的出站网络路径，均默认关闭</strong>，且都需要你显式开启：远端刷新（<code>git fetch</code>）与 AI 功能。</li>
+    </ul>
+  </div>
+
+  <h2>1. 我们收集的信息：无</h2>
+  <p>RepoShep 不收集、不传输、不出售任何个人数据。应用没有用户账号体系，不内嵌任何遥测、分析或崩溃上报组件，不含广告或追踪器。如你在 macOS 系统设置中开启了崩溃报告，相关数据由 Apple 按 Apple 的隐私政策处理，与本应用无关。</p>
+
+  <h2>2. 保存在你 Mac 上的数据</h2>
+  <p>以下数据只存储在你的 Mac 上（应用沙盒容器内），不上传、不同步：</p>
+  <ul>
+    <li>你授权的文件夹与对应的安全作用域书签；</li>
+    <li>仓库列表、分组、收藏与偏好设置；</li>
+    <li>Git 状态、差异缓存、健康分、状态持续时间与活动记录；</li>
+    <li>运行时缓存。</li>
+  </ul>
+  <p>唯一的例外：你在 AI 设置中填写的 API Key 保存在 <strong>macOS 钥匙串（Keychain）</strong>中，不写入普通文件。卸载应用即删除上述沙盒内数据；钥匙串中的条目可随时在设置中清除。</p>
+
+  <h2>3. 系统权限的使用</h2>
+  <ul>
+    <li><strong>文件夹访问：</strong>RepoShep 运行于 App Sandbox，只能访问你通过系统文件选择器明确选择的文件夹。授权以安全作用域书签形式记住，用于重启后恢复访问；你可以随时移除授权。应用不会请求全盘访问。</li>
+    <li><strong>网络：</strong>默认配置下，应用不产生任何网络请求。仅当你开启下述可选功能时，应用才会发起出站连接。</li>
+  </ul>
+
+  <h2>4. 可选出站路径一：远端刷新（git fetch）</h2>
+  <p>此功能<strong>默认关闭</strong>，开启需要总开关与首次功能披露双重确认。它对你的仓库远端执行唯一的 Git 写操作 <code>git fetch</code>，用于刷新本地的远端跟踪引用，使「超前 / 落后」与「远端状态更新时间」反映远端最新状态。</p>
+  <ul>
+    <li><strong>传输内容：</strong>仅为 Git 传输协议本身所需的信息（远端地址与 Git 协议握手数据）。<strong>不包含</strong>源码内容、差异文本或任何健康数据。</li>
+    <li><strong>写入范围：</strong>仅写入库的 <code>.git</code> 目录（位于你授权的文件夹内），从不修改你的工作区文件。</li>
+    <li><strong>协议边界：</strong>仅支持 HTTPS 远端；SSH 等其它协议不会在应用内执行，而是引导你使用自己的终端。永不执行 push、pull、clone 或其它任何 Git 写操作。</li>
+    <li><strong>凭据：</strong>RepoShep 不创建、不存储 Git 凭据。如远端需要认证，由 Git 自身的钥匙串凭据助手（<code>osxkeychain</code>）按 Git 的既有机制处理，凭据不会写入仓库配置。</li>
+  </ul>
+
+  <h2>5. 可选出站路径二：AI 功能</h2>
+  <p>AI 功能<strong>默认关闭</strong>。你需要在设置中自行配置一个 OpenAI 兼容的服务端点（地址、模型与 API Key）。请求由应用<strong>直接</strong>发往你配置的端点：开发者不经手、不代理、不可见。三项 AI 功能发送的内容各不相同：</p>
+
+  <h3>5.1 状态解读</h3>
+  <p>发送一组结构化事实：仓库文件夹名、分支名、健康状态、状态持续时间、超前/落后计数、改动/未跟踪/冲突文件数、增删行数，以及至多 50 个改动文件路径（超出会截断并告知总量）。<strong>从不发送</strong>文件内容、diff 正文、远程 URL 或绝对路径。</p>
+
+  <h3>5.2 改动总结</h3>
+  <p>在你对<strong>每一次</strong>请求逐一确认后，发送该仓库当前改动的真实 diff 文本（单次上限 48 KB，超出部分截断并明确标注）。diff 是你的代码原文——是否发送，由你逐次决定。</p>
+
+  <h3>5.3 命令助手</h3>
+  <p>发送你的自然语言问题与上述仓库状态事实。返回的命令建议<strong>仅用于复制或在终端打开</strong>：RepoShep 永不自动执行任何命令。</p>
+
+  <p>你的 API Key 只保存在 macOS 钥匙串。发送给 AI 服务商的内容还受该服务商自身隐私政策约束，请选择你信任的服务商。</p>
+
+  <h2>6. 诊断报告与日志脱敏</h2>
+  <p>「导出诊断报告」由你主动触发，保存到你选择的位置。报告<strong>不包含</strong>源码、diff、凭据或令牌。远程 URL 在进入界面、日志或诊断之前，其中内嵌的用户名、令牌与密码一律剥离；报告中的用户路径也会做脱敏处理。</p>
+
+  <h2>7. 第三方服务</h2>
+  <p>开发者不运营任何后端服务。若你启用远端刷新或 AI 功能，涉及的服务器（Git 托管服务商、AI 服务商）完全由你自行选择与配置，这些交互适用其各自的隐私政策。</p>
+
+  <h2>8. 儿童隐私</h2>
+  <p>RepoShep 是面向开发者的工具，不面向儿童，也不有意收集任何用户的个人数据。</p>
+
+  <h2>9. 数据安全</h2>
+  <p>应用运行于 macOS App Sandbox，按最小权限申请系统能力；对仓库的访问仅限你明确授权的范围；出站连接仅限于上述两条可选路径。核心功能不依赖任何联网能力。</p>
+
+  <h2>10. 政策变更</h2>
+  <p>如隐私政策发生变化（例如未来加入新的可选联网功能），我们会在本页更新并修改生效日期；涉及新数据流的功能会在应用内同步披露并默认关闭。</p>
+
+  <h2>11. 联系我们</h2>
+  <p>如对隐私政策有任何疑问，请联系：<a href="mailto:support@example.com">support@example.com</a>。</p>
+
+</section>
+
+<hr class="en-divider">
+
+<!-- ======================== English ======================== -->
+<section class="lang-en">
+
+  <div class="callout">
+    <p><strong>Summary</strong></p>
+    <ul>
+      <li><strong>We collect nothing.</strong> No accounts, no telemetry, no analytics, no ads, no tracking, and no developer-operated servers.</li>
+      <li>Core features run <strong>entirely and locally on your Mac</strong>: repository status, diffs, health scores and activity logs stay on your machine.</li>
+      <li>There are exactly <strong>two optional outbound network paths, both off by default</strong>, each requiring your explicit opt-in: remote refresh (<code>git fetch</code>) and the AI features.</li>
+    </ul>
+  </div>
+
+  <h2>1. Information we collect: none</h2>
+  <p>RepoShep does not collect, transmit, or sell any personal data. The app has no user accounts, embeds no telemetry, analytics, or crash-reporting SDKs, and contains no ads or trackers. If you have enabled crash reporting in macOS system settings, that data is handled by Apple under Apple's privacy policy and is unrelated to this app.</p>
+
+  <h2>2. Data stored on your Mac</h2>
+  <p>The following data is stored only on your Mac, inside the app's sandbox container. It is never uploaded or synced:</p>
+  <ul>
+    <li>Your authorized folders and their security-scoped bookmarks;</li>
+    <li>Your repository list, groups, favorites, and preferences;</li>
+    <li>Git status, diff caches, health scores, state durations, and activity logs;</li>
+    <li>Runtime caches.</li>
+  </ul>
+  <p>The one exception: the API key you enter in AI settings is stored in the <strong>macOS Keychain</strong>, never in plain files. Uninstalling the app removes the sandbox data above; the Keychain entry can be cleared from settings at any time.</p>
+
+  <h2>3. System permissions</h2>
+  <ul>
+    <li><strong>Folder access:</strong> RepoShep runs inside App Sandbox and can only access folders you explicitly select in the system file picker. Authorization is remembered via security-scoped bookmarks so access survives relaunch, and you can revoke it at any time. The app never requests Full Disk Access.</li>
+    <li><strong>Network:</strong> With default settings the app makes no network requests at all. Outbound connections occur only when you enable the optional features below.</li>
+  </ul>
+
+  <h2>4. Optional outbound path 1: remote refresh (git fetch)</h2>
+  <p>This feature is <strong>off by default</strong> and requires a two-step consent: a master switch plus a first-run disclosure. It performs the app's single sanctioned Git write operation, <code>git fetch</code>, so that "ahead / behind" and "remote last refreshed" reflect the latest remote state.</p>
+  <ul>
+    <li><strong>What is transmitted:</strong> only what the Git transfer protocol itself requires (the remote address and Git protocol handshake data). It <strong>never includes</strong> source code, diff text, or any health data.</li>
+    <li><strong>What is written:</strong> only the repository's <code>.git</code> directory (inside your authorized folder). Your working tree files are never modified.</li>
+    <li><strong>Protocol boundary:</strong> HTTPS remotes only. SSH and other schemes are never executed in-app; you are guided to your own terminal instead. The app never performs push, pull, clone, or any other Git write operation.</li>
+    <li><strong>Credentials:</strong> RepoShep does not create or store Git credentials. If a remote requires authentication, Git's own Keychain credential helper (<code>osxkeychain</code>) handles it under Git's standard mechanism; credentials are never written into repository config.</li>
+  </ul>
+
+  <h2>5. Optional outbound path 2: AI features</h2>
+  <p>The AI features are <strong>off by default</strong>. You configure your own OpenAI-compatible endpoint (URL, model, and API key) in settings. Requests go <strong>directly</strong> from the app to your configured endpoint: the developer never sees, proxies, or relays them. The three AI features send different things:</p>
+
+  <h3>5.1 State interpretation</h3>
+  <p>Sends a set of structured facts: the repository folder name, branch name, health state, state duration, ahead/behind counts, changed/untracked/unmerged file counts, insertion/deletion line counts, and up to 50 changed file paths (capped, with the total disclosed). It <strong>never sends</strong> file contents, diff bodies, remote URLs, or absolute paths.</p>
+
+  <h3>5.2 Change summary</h3>
+  <p>After you explicitly confirm <strong>each individual</strong> request, it sends the repository's actual diff text (48 KB per request, truncated and clearly labeled beyond that). The diff is your code verbatim — whether to send it is your per-request decision.</p>
+
+  <h3>5.3 Command assistant</h3>
+  <p>Sends your natural-language question together with the structured facts above. The suggested command it returns is <strong>for copying or opening in Terminal only</strong>: RepoShep never executes any command automatically.</p>
+
+  <p>Your API key is stored only in the macOS Keychain. What AI providers do with the content you send is governed by their own privacy policies — choose a provider you trust.</p>
+
+  <h2>6. Diagnostic reports and log redaction</h2>
+  <p>"Export Diagnostic Report" runs only when you trigger it, and saves to a location you choose. The report <strong>never contains</strong> source code, diffs, credentials, or tokens. Remote URLs have any embedded username, token, or password stripped before they reach the UI, logs, or diagnostics, and user paths in reports are redacted.</p>
+
+  <h2>7. Third-party services</h2>
+  <p>The developer operates no backend services. If you enable remote refresh or the AI features, the servers involved (your Git host and your AI provider) are entirely your own choice and configuration; those interactions are governed by their respective privacy policies.</p>
+
+  <h2>8. Children's privacy</h2>
+  <p>RepoShep is a developer tool. It is not directed at children and does not knowingly collect personal data from any user.</p>
+
+  <h2>9. Data security</h2>
+  <p>The app runs inside the macOS App Sandbox and requests system capabilities on a least-privilege basis. Repository access is limited to folders you explicitly authorize, and outbound connections are limited to the two optional paths described above. Core functionality requires no network access.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If this policy changes (for example, if a new optional networked feature is added in the future), we will update this page and revise the effective date. Features involving new data flows will be disclosed in-app and off by default.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:support@example.com">support@example.com</a>.</p>
+
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 RepoShep. All rights reserved.</p>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btnZh = document.getElementById('btn-zh');
+    var btnEn = document.getElementById('btn-en');
+    function setLang(lang) {
+      root.setAttribute('data-lang', lang);
+      btnZh.setAttribute('aria-pressed', String(lang === 'zh'));
+      btnEn.setAttribute('aria-pressed', String(lang === 'en'));
+    }
+    btnZh.addEventListener('click', function () { setLang('zh'); });
+    btnEn.addEventListener('click', function () { setLang('en'); });
+  })();
+</script>
+
+</body>
+</html>
