@@ -7,7 +7,7 @@ RepoShep（牧仓犬）是一款 macOS 原生的**多仓库健康监控 App**：
 > RepoDeck 帮你操作仓库，RepoShep 告诉你哪个仓库需要你。
 > *RepoDeck helps you work with repositories. RepoShep tells you which repositories need you.*
 
-[隐私政策（Privacy Policy）](privacy-policy.html) · Mac App Store
+[隐私政策（Privacy Policy）](https://cnliucheng.github.io/RepoShep/privacy-policy.html) · Mac App Store
 
 ---
 
